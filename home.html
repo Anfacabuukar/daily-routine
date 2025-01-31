@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Routine Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .task-completed {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body class="bg-gray-200 p-5">
+<div class="flex justify-center m-auto text-center">
+    <div class="container mx-auto w-[650px] h-[700px] bg-orange-100">
+        <h1 class="text-2xl font-bold mb-4">Daily Routine Tracker</h1>
+        <input id="timeInput" type="time" class="border p-2 mr-2" required>
+        <input id="taskInput" type="text" placeholder="What are you doing?" class="border p-2 mr-2" required>
+        <button id="addTask" class="bg-blue-500 text-white p-2">Add Task</button>
+        <ul id="taskList" class="mt-5"></ul>
+        <div id="completionMessage" class="hidden mt-4 text-white font-bold"></div>
+    </div>
+</div>
+    <script src="main2.js"></script>
+
+   
+</body>
+</html>
